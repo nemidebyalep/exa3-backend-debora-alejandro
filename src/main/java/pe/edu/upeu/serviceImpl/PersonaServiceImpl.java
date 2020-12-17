@@ -16,7 +16,7 @@ public class PersonaServiceImpl implements PersonaService{
 		@Override
 		public int create(Persona r) {
 			// TODO Auto-generated method stub
-			return 0;
+			return personaDao.create(r);
 		}
 
 		@Override
@@ -28,13 +28,13 @@ public class PersonaServiceImpl implements PersonaService{
 		@Override
 		public int update(int id) {
 			// TODO Auto-generated method stub
-			return 0;
+			return personaDao.update(id);
 		}
 
 		@Override
 		public int delete(int id) {
 			// TODO Auto-generated method stub
-			return 0;
+			return personaDao.delete(id);
 		}
 
 		@Override
@@ -46,6 +46,6 @@ public class PersonaServiceImpl implements PersonaService{
 		@Override
 		public Map<String, Object> readAll() {
 			// TODO Auto-generated method stub
-			return null;
+			return personaDao.readAll();
 		}
 }

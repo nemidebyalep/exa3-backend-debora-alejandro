@@ -16,19 +16,19 @@ public class UsuarioServiceImpl implements UsuarioService{
 	@Override
 	public int create(Usuario u) {
 		// TODO Auto-generated method stub
-		return 0;
+		return usuarioDao.create(u);
 	}
 
 	@Override
 	public int update(Usuario u) {
 		// TODO Auto-generated method stub
-		return 0;
+		return usuarioDao.update(u);
 	}
 
 	@Override
 	public int delete(int id) {
 		// TODO Auto-generated method stub
-		return 0;
+		return usuarioDao.delete(id);
 	}
 
 	@Override
@@ -40,12 +40,12 @@ public class UsuarioServiceImpl implements UsuarioService{
 	@Override
 	public Usuario validarUsuario(String nomuser) {
 		// TODO Auto-generated method stub
-		return null;
+		return usuarioDao.validarUsuario(nomuser);
 	}
 
 	@Override
 	public Map<String, Object> datosUsuario(String username) {
 		// TODO Auto-generated method stub
-		return null;
+		return usuarioDao.datosUsuario(username);
 	}
 }

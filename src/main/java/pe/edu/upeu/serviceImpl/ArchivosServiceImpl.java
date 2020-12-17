@@ -21,31 +21,32 @@ public class ArchivosServiceImpl implements ArchivosService{
 		@Override
 		public int update(Archivos a) {
 			// TODO Auto-generated method stub
-			return 0;
+			return archivosDao.create(a);
 		}
 
 		@Override
 		public int update(int id) {
 			// TODO Auto-generated method stub
-			return 0;
+			return archivosDao.update(id);
 		}
 
 		@Override
 		public int delete(int id) {
 			// TODO Auto-generated method stub
-			return 0;
+			return archivosDao.delete(id);
 		}
 
 		@Override
 		public List<Map<String, Object>> read(int id) {
 			// TODO Auto-generated method stub
-			return null;
+			return archivosDao.read(id);
 		}
 
 		@Override
 		public List<Map<String, Object>> readAll() {
 			// TODO Auto-generated method stub
-			return null;
+			return archivosDao.readAll()
+					;
 		}
 
 }

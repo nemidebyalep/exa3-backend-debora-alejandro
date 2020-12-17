@@ -16,7 +16,7 @@ public class AccesoServiceImpl implements AccesoService{
 	@Override
 	public int create(Acceso a) {
 		// TODO Auto-generated method stub
-		return 0;
+		return accesosDao.create(a);
 	}
 
 	@Override
@@ -28,13 +28,13 @@ public class AccesoServiceImpl implements AccesoService{
 	@Override
 	public int update(int id) {
 		// TODO Auto-generated method stub
-		return 0;
+		return accesosDao.update(id);
 	}
 
 	@Override
 	public int delete(int id) {
 		// TODO Auto-generated method stub
-		return 0;
+		return accesosDao.delete(id);
 	}
 
 	@Override
@@ -46,12 +46,12 @@ public class AccesoServiceImpl implements AccesoService{
 	@Override
 	public List<Map<String, Object>> readAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return accesosDao.readAll();
 	}
 
 	@Override
 	public Map<String, Object> readAll(String username) {
 		// TODO Auto-generated method stub
-		return null;
+		return accesosDao.readAll(username);
 	}
 }
